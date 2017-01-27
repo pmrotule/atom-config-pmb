@@ -1,0 +1,75 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+".source.js.jsx":
+  "ES6 Arrow function":
+    prefix: "6fn"
+    body: "const $1 = ($2) => $3"
+
+  "Import React":
+    prefix: "imr"
+    body: "import React from 'react';"
+  "Import ReactDOM":
+    prefix: "imrd"
+    body: "import ReactDOM from 'react-dom';"
+  "React: class skeleton (ES6)":
+    prefix: "rcla"
+    body: "class $1 extends React.Component {\n\trender() {\n\t\treturn (\n\t\t\t$2\n\t\t)\n\t}\n}"
+  "React: fetch call (ES6)":
+    prefix: "rfetch"
+    body: "fetch($1)\n\t.then(response => response.json())\n\t.then(data => {})"
+
+  "React: Link component tag":
+    prefix: "link"
+    body: "<Link to=\"$1\">$2</Link>"
+  "React: Route component tag":
+    prefix: "route"
+    body: "<Route path=\"$1\" component={$2}>$3</Route>"
+  "React: Router component tag":
+    prefix: "router"
+    body: "<Router history={ $1 }>$2</Router>"
+
+  "Webpack config starter":
+    prefix: "wpc"
+    body: """
+      module.exports = {
+        entry: '$1',
+        output: {
+          path: '$2',
+          filename: '$3',
+        },
+        devServer: {
+          inline: true,
+          contentBase: '$4',
+          port: 3333
+        },
+        module: {
+          loaders: [
+            {
+              test: ${5:/\\\\.js\$/},
+              exclude: ${6:/node_modules/},
+              loader: '${7:babel}'
+            }
+          ]
+        }
+      }
+    """

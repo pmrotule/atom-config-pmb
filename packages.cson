@@ -1,0 +1,11 @@
+packages: [
+  "chary-tree-view"
+  "language-javascript-jsx"
+  "linter"
+  "linter-js-standard"
+  "package-sync"
+  "pigments"
+  "react"
+  "Remote-FTP"
+  "simple-drag-drop-text"
+]

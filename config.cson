@@ -1,0 +1,106 @@
+"*":
+  "Remote-FTP":
+    autoUploadOnSave: "never"
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    includeCompletionsFromAllBuffers: false
+  "bracket-matcher":
+    autocompleteBrackets: false
+    wrapSelectionsInBrackets: false
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "remote-sync"
+      "pigments"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "_notes"
+      "node_modules"
+    ]
+    packagesWithKeymapsDisabled: [
+      "sass-autocompile"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    autoIndentOnPaste: false
+    normalizeIndentOnPaste: true
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "69d3587a-7d89-7f35-494f-3cf129b99442"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  pigments:
+    markerType: "dot"
+  "remote-sync":
+    autoHideLogPanel: true
+  "sass-autocompile":
+    compileOnSave: false
+    compressedFilenamePattern: "..\\css\\$1.min.css"
+  tabs:
+    addNewTabsAtEnd: true
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".ansi.text":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".css.source":
+  editor:
+    tabLength: 2
+".hack.html.text":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".hackfragment.source":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".hg-commit.text":
+  editor:
+    preferredLineLength: 80
+    tabLength: 2
+".html.source":
+  editor:
+    tabLength: 2
+".html.text":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
+".php.source":
+  editor:
+    tabLength: 2
+".php.text":
+  editor:
+    tabLength: 2
+".scss.source":
+  editor:
+    tabLength: 2
