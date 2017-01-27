@@ -1,3 +1,7 @@
+##Installation
+
+Clone the repository or add the files directly to `~/.atom/`
+
 ##Synchronizing Packages
 
 Install the package called [package-sync](https://atom.io/packages/package-sync "Package-sync on atom.io"):
