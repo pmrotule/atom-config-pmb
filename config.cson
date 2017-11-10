@@ -58,6 +58,7 @@
     markerType: "dot"
   "remote-sync":
     autoHideLogPanel: true
+  "ruby-block": {}
   "sass-autocompile":
     compileOnSave: false
     compressedFilenamePattern: "..\\css\\$1.min.css"

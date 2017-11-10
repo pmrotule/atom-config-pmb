@@ -7,5 +7,6 @@ packages: [
   "pigments"
   "react"
   "Remote-FTP"
+  "ruby-block"
   "simple-drag-drop-text"
 ]
