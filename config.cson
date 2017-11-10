@@ -8,6 +8,7 @@
     autocompleteBrackets: false
     wrapSelectionsInBrackets: false
   core:
+    allowPendingPaneItems: false
     customFileTypes:
       "source.ini": [
         ".buckconfig"
@@ -38,7 +39,6 @@
     ]
     telemetryConsent: "limited"
   editor:
-    autoIndentOnPaste: false
     normalizeIndentOnPaste: true
     scrollPastEnd: true
     showIndentGuide: true
