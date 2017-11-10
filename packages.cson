@@ -1,5 +1,4 @@
 packages: [
-  "chary-tree-view"
   "language-javascript-jsx"
   "linter"
   "linter-js-standard"
