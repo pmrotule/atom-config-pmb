@@ -30,3 +30,29 @@ atom-text-editor {
 atom-text-editor::shadow .cursor {
   // border-color: red;
 }
+
+@tab-bar-height: 3.2em;
+@tab-close-height: 1.5em;
+@tab-close-padding: (@tab-bar-height - @tab-close-height) / 2;
+
+.tab-bar {
+  height: @tab-bar-height;
+
+  .tab {
+    line-height: @tab-bar-height;
+
+    .close-icon {
+      top: @tab-close-padding;
+      right: @tab-close-padding;
+      width: @tab-close-height;
+      height: @tab-close-height;
+    }
+
+    &.modified:not(:hover) .close-icon {
+      top: @tab-close-padding;
+      right: @tab-close-padding;
+      width: @tab-close-height;
+      height: @tab-close-height;
+    }
+  }
+}
