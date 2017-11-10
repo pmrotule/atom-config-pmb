@@ -23,6 +23,7 @@
       ]
     disabledPackages: [
       "remote-sync"
+      "linter-js-standard"
     ]
     ignoredNames: [
       ".git"

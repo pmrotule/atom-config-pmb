@@ -1,7 +1,11 @@
 packages: [
+  "busy-signal"
+  "goto-definition"
+  "intentions"
   "language-javascript-jsx"
   "linter"
   "linter-js-standard"
+  "linter-ui-default"
   "package-sync"
   "pigments"
   "react"
