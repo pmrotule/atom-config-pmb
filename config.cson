@@ -22,7 +22,6 @@
       ]
     disabledPackages: [
       "remote-sync"
-      "pigments"
     ]
     ignoredNames: [
       ".git"
@@ -55,7 +54,7 @@
     createOnChange: true
     forceOverwrite: true
   pigments:
-    markerType: "dot"
+    markerType: "native-dot"
   "remote-sync":
     autoHideLogPanel: true
   "ruby-block": {}
