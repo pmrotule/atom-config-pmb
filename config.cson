@@ -9,6 +9,7 @@
     wrapSelectionsInBrackets: false
   core:
     allowPendingPaneItems: false
+    closeDeletedFileTabs: true
     customFileTypes:
       "source.ini": [
         ".buckconfig"
