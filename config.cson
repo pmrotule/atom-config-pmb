@@ -2,8 +2,10 @@
   "Remote-FTP":
     autoUploadOnSave: "never"
   "autocomplete-plus":
+    autoActivationDelay: 200
     confirmCompletion: "enter"
     includeCompletionsFromAllBuffers: false
+    useCoreMovementCommands: false
   "bracket-matcher":
     autocompleteBrackets: false
     wrapSelectionsInBrackets: false

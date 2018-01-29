@@ -35,6 +35,12 @@
   'ctrl-alt-[': 'unset!'
   'alt-left': 'editor:move-to-first-character-of-line'
   'alt-right': 'editor:move-to-end-of-line'
-  
+
 'atom-text-editor':
   'shift-cmd-1': 'github:toggle-git-tab'
+
+'atom-text-editor.autocomplete-active':
+  'up': 'unset!'
+  'down': 'unset!'
+  'alt-up': 'autocomplete-plus:move-up'
+  'alt-down': 'autocomplete-plus:move-down'
