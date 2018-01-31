@@ -13,4 +13,5 @@ packages: [
   "ruby-block"
   "simple-drag-drop-text"
   "tag"
+  "tree-view-search-bar"
 ]

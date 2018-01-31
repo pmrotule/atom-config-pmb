@@ -36,8 +36,10 @@
   'alt-left': 'editor:move-to-first-character-of-line'
   'alt-right': 'editor:move-to-end-of-line'
 
-'atom-text-editor':
+'atom-text-editor, atom-dock':
   'shift-cmd-1': 'github:toggle-git-tab'
+  'cmd-ctrl-shift-f': 'search-bar:focus'
+  'cmd-ctrl-shift-h': 'search-bar:hide'
 
 'atom-text-editor.autocomplete-active':
   'up': 'unset!'
