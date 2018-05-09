@@ -1,6 +1,9 @@
 "*":
   "Remote-FTP":
     autoUploadOnSave: "never"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "909f6d8a-3922-4a7f-be5a-6ac220a8b7e0"
   "autocomplete-plus":
     autoActivationDelay: 200
     confirmCompletion: "enter"
@@ -30,6 +33,8 @@
     disabledPackages: [
       "remote-sync"
       "linter-js-standard"
+      "pigments"
+      "react"
     ]
     ignoredNames: [
       ".git"
