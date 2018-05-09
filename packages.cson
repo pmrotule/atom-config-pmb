@@ -10,7 +10,6 @@ packages: [
   "package-sync"
   "pigments"
   "react"
-  "Remote-FTP"
   "ruby-block"
   "simple-drag-drop-text"
   "tag"
