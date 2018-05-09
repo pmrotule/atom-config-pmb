@@ -3,6 +3,7 @@ packages: [
   "goto-definition"
   "intentions"
   "language-javascript-jsx"
+  "language-vue"
   "linter"
   "linter-js-standard"
   "linter-ui-default"
