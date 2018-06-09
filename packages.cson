@@ -5,7 +5,7 @@ packages: [
   "language-javascript-jsx"
   "language-vue"
   "linter"
-  "linter-js-standard"
+  "linter-eslint"
   "linter-ui-default"
   "package-sync"
   "pigments"
