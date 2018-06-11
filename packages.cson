@@ -2,7 +2,6 @@ packages: [
   "busy-signal"
   "goto-definition"
   "intentions"
-  "language-javascript-jsx"
   "language-vue"
   "linter"
   "linter-eslint"
