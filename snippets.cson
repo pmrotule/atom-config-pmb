@@ -20,6 +20,22 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+'.text.html.vue':
+  'Vue component skeleton':
+    prefix: 'vue'
+    body: """
+      <template>
+      $2
+      </template>
+
+      <script>
+      export default {
+        name: '$1',
+      }
+      </script>
+
+    """
+
 ".source.js.jsx":
   "ES6 Arrow function":
     prefix: "6fn"
