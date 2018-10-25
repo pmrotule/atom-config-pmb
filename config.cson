@@ -34,6 +34,7 @@
       "remote-sync"
       "pigments"
       "react"
+      "linter-rubocop"
     ]
     ignoredNames: [
       ".git"
@@ -61,8 +62,17 @@
     userId: "69d3587a-7d89-7f35-494f-3cf129b99442"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  linter: {}
   "linter-eslint":
     lintHtmlFiles: true
+    rulesToSilenceWhileTyping: [
+      "no-trailing-spaces"
+      "no-unused-vars"
+      "eol-last"
+      "vue/return-in-computed-property"
+    ]
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-ui-default": {}
   "package-sync":
     createOnChange: true
