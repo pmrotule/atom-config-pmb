@@ -37,6 +37,7 @@
   'alt-right': 'editor:move-to-end-of-line'
 
 'atom-text-editor, atom-dock':
+  'cmd-i': 'tree-view:reveal-active-file'
   'cmd-e': 'linter-eslint:fix-file'
   'shift-cmd-1': 'github:toggle-git-tab'
   'cmd-ctrl-shift-f': 'search-bar:focus'
