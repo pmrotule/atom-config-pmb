@@ -34,6 +34,7 @@
       "remote-sync"
       "pigments"
       "react"
+      "tree-view-search-bar"
       "linter-rubocop"
     ]
     ignoredNames: [
