@@ -3,6 +3,7 @@ packages: [
   "busy-signal"
   "goto-definition"
   "intentions"
+  "language-graphql"
   "language-vue"
   "linter"
   "linter-eslint"
