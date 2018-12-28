@@ -12,6 +12,7 @@ packages: [
   "linter-ui-default"
   "package-sync"
   "pigments"
+  "prettier-atom"
   "react"
   "ruby-block"
   "simple-drag-drop-text"

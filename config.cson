@@ -80,6 +80,13 @@
     forceOverwrite: true
   pigments:
     markerType: "native-dot"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    useEslint: true
   "remote-sync":
     autoHideLogPanel: true
   "ruby-block": {}
