@@ -20,6 +20,57 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+'.text.html.vue .source.js.embedded.html':
+  'Vue data':
+    prefix: 'data'
+    body: """
+      data() {
+        return {
+          $1
+        }
+      },
+    """
+  'Vue props':
+    prefix: 'props'
+    body: """
+      props: {
+        ${1:propName}: {
+          type: ${2:String},
+          default: ${0}
+        },
+      },
+    """
+  'Vue methods':
+    prefix: 'methods'
+    body: """
+    methods: {
+      ${1:name}() {
+        ${0}
+      },
+    },
+    """
+  'Vue computed':
+    prefix: 'computed'
+    body: """
+    computed: {
+      ${1:name}() {
+        return ${0}
+      },
+    },
+    """
+  'Vue watchers':
+    prefix: 'watch'
+    body: """
+    watch: {
+      ${1:name}(value) {
+        ${0}
+      },
+    },
+    """
+  'Vue import component':
+    prefix: 'import'
+    body: 'import ${1:New} from \'@/components/${1:New}.vue\''
+
 '.text.html.vue':
   'Vue component skeleton':
     prefix: 'vue'
@@ -34,6 +85,13 @@
       }
       </script>
 
+    """
+  'Vue style tag':
+    prefix: 'vstyle'
+    body: """
+      <style lang="scss" scoped>
+      $1
+      </style>
     """
 
 ".source.js.jsx":
