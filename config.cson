@@ -36,6 +36,9 @@
       "react"
       "tree-view-search-bar"
       "linter-rubocop"
+      "linter-scss-lint"
+      "language-babel"
+      "language-html-babel"
     ]
     ignoredNames: [
       ".git"
@@ -53,6 +56,7 @@
     telemetryConsent: "limited"
   editor:
     normalizeIndentOnPaste: true
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
@@ -65,16 +69,24 @@
     promptWhenFileHasChangedOnDisk: false
   linter: {}
   "linter-eslint":
+    autofix:
+      rulesToDisableWhileFixing: [
+        "no-debugger"
+      ]
+    disabling:
+      rulesToSilenceWhileTyping: [
+        "no-multiple-empty-lines"
+        "no-trailing-spaces"
+        "no-unused-vars"
+        "eol-last"
+        "no-empty"
+        "vue/return-in-computed-property"
+      ]
     lintHtmlFiles: true
-    rulesToSilenceWhileTyping: [
-      "no-trailing-spaces"
-      "no-unused-vars"
-      "eol-last"
-      "vue/return-in-computed-property"
-    ]
   "linter-rubocop":
     disableWhenNoConfigFile: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "package-sync":
     createOnChange: true
     forceOverwrite: true
