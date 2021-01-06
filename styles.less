@@ -34,6 +34,7 @@ atom-text-editor::shadow .cursor {
 @tab-bar-height: 3.2em;
 @tab-close-height: 1.5em;
 @tab-close-padding: (@tab-bar-height - @tab-close-height) / 2;
+@tab-border-color: #181a1f;
 
 .tab-bar {
   height: @tab-bar-height;
@@ -53,6 +54,22 @@ atom-text-editor::shadow .cursor {
       right: @tab-close-padding;
       width: @tab-close-height;
       height: @tab-close-height;
+    }
+
+    &.pinned-tab > .title {
+      position: fixed;
+      max-width: inherit;
+      border-right: 1px solid @tab-border-color;
+      box-shadow: inherit;
+      background-color: inherit;
+      transform: translateX(-2px);
+      z-index: 1000;
+    }
+
+    &.pinned-tab + .active:not(.pinned-tab) {
+      &:before {
+        width: 3px !important;
+      }
     }
   }
 }
