@@ -10,7 +10,7 @@
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
 
-atom.workspace.observeTextEditors (editor) ->
-  original = editor.getGrammar()
-  if original? and original is atom.grammars.grammarForScopeName('text.plain.null-grammar')
-    editor.setGrammar(atom.grammars.grammarForScopeName('source.js'))
+# atom.workspace.observeTextEditors (editor) ->
+#   original = editor.getGrammar()
+#   if original? and original is atom.grammars.grammarForScopeName('text.plain.null-grammar')
+#     editor.setGrammar(atom.grammars.grammarForScopeName('source.js'))
