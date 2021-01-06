@@ -9,6 +9,8 @@
     confirmCompletion: "enter"
     includeCompletionsFromAllBuffers: false
     useCoreMovementCommands: false
+  "better-git-blame":
+    searchInLayerEnabled: false
   "bracket-matcher":
     autocompleteBrackets: false
     wrapSelectionsInBrackets: false
@@ -33,7 +35,6 @@
     disabledPackages: [
       "remote-sync"
       "pigments"
-      "react"
       "tree-view-search-bar"
       "linter-rubocop"
       "linter-scss-lint"
@@ -55,6 +56,7 @@
     ]
     telemetryConsent: "limited"
   editor:
+    fontSize: 15
     normalizeIndentOnPaste: true
     preferredLineLength: 100
     scrollPastEnd: true
@@ -75,12 +77,14 @@
       ]
     disabling:
       rulesToSilenceWhileTyping: [
+        "prettier/prettier"
         "no-multiple-empty-lines"
         "no-trailing-spaces"
         "no-unused-vars"
         "eol-last"
         "no-empty"
         "vue/return-in-computed-property"
+        "vue/no-unused-components"
       ]
     lintHtmlFiles: true
   "linter-rubocop":
@@ -95,6 +99,10 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+      excludedGlobs: [
+        "*.yml"
+        "*.template.html"
+      ]
       isDisabledIfNoConfigFile: true
       showInStatusBar: true
     prettierEslintOptions: {}

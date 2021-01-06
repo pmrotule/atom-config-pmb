@@ -1,9 +1,11 @@
 packages: [
   "atom-beautify"
+  "better-git-blame"
   "busy-signal"
   "goto-definition"
   "intentions"
   "language-babel"
+  "language-ejs"
   "language-graphql"
   "language-html-babel"
   "language-vue"
@@ -16,9 +18,9 @@ packages: [
   "package-sync"
   "pigments"
   "prettier-atom"
-  "react"
   "ruby-block"
   "simple-drag-drop-text"
+  "sort-selected-elements"
   "tag"
   "tree-view-search-bar"
 ]
