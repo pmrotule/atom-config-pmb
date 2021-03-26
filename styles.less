@@ -34,7 +34,11 @@ atom-text-editor::shadow .cursor {
 @tab-bar-height: 3.2em;
 @tab-close-height: 1.5em;
 @tab-close-padding: (@tab-bar-height - @tab-close-height) / 2;
+@tab-bg-color: #21252b;
+@tab-bg-color-active: #282c34;
 @tab-border-color: #181a1f;
+@tab-active-border-left-color: #4f545e;
+@tab-active-focus-border-left-color: #568af2;
 
 .tab-bar {
   height: @tab-bar-height;
@@ -56,19 +60,53 @@ atom-text-editor::shadow .cursor {
       height: @tab-close-height;
     }
 
-    &.pinned-tab > .title {
-      position: fixed;
-      max-width: inherit;
-      border-right: 1px solid @tab-border-color;
-      box-shadow: inherit;
-      background-color: inherit;
-      transform: translateX(-2px);
-      z-index: 1000;
-    }
+    &.pinned-tab {
+      border-left-width: 0;
 
-    &.pinned-tab + .active:not(.pinned-tab) {
       &:before {
-        width: 3px !important;
+        display: none;
+      }
+
+      > .title {
+        position: fixed;
+        margin-right: 1px;
+        max-width: inherit;
+        border-right: 1px solid @tab-border-color;
+        box-shadow: inherit;
+        background: linear-gradient(to left, @tab-bg-color, @tab-bg-color) no-repeat 1px 0;
+        transform: translateX(-2px);
+        z-index: 1000;
+      }
+
+      &.active > .title {
+        background: linear-gradient(to left, @tab-bg-color-active, @tab-bg-color-active) no-repeat 1px 0;
+
+        &:after {
+          content: "";
+          position: absolute;
+          pointer-events: none;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 2px;
+          background: @tab-active-border-left-color;
+
+          .pane:focus-within & {
+            background: @tab-active-focus-border-left-color;
+          }
+        }
+      }
+
+      &.active:first-of-type > .title,
+      &:first-of-type > .title {
+        background-color: inherit;
+      }
+
+      & + .active:not(.pinned-tab) {
+        &:before {
+          width: 3px !important;
+        }
       }
     }
   }
